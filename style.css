@@ -1,0 +1,169 @@
+/* Import Google Fonts Noto Sans */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+
+body {
+    background-color: #2964bd;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='2560' height='1440' preserveAspectRatio='none' viewBox='0 0 2560 1440'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1019%26quot%3b)' fill='none'%3e%3crect width='2560' height='1440' x='0' y='0' fill='rgba(52%2c 123%2c 197%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c913.523C168.436%2c894.946%2c296.209%2c771.176%2c450.323%2c700.717C636.326%2c615.679%2c881.889%2c623.748%2c999.619%2c456.511C1118.994%2c286.937%2c1083.587%2c53.67%2c1049.87%2c-150.949C1016.656%2c-352.515%2c930.501%2c-536.765%2c808.896%2c-700.912C679.573%2c-875.478%2c543.24%2c-1082.788%2c329.744%2c-1123.005C117.687%2c-1162.951%2c-57.367%2c-961.233%2c-265.216%2c-903.244C-477.146%2c-844.116%2c-756.435%2c-946.587%2c-900.048%2c-779.896C-1043.734%2c-613.12%2c-932.087%2c-353.59%2c-928.406%2c-133.485C-925.347%2c49.412%2c-953.248%2c234.271%2c-880.282%2c402.011C-806.569%2c571.47%2c-678.811%2c714.783%2c-519.031%2c807.628C-363.204%2c898.176%2c-179.139%2c933.28%2c0%2c913.523' fill='%23225080'%3e%3c/path%3e%3cpath d='M2560 2489.157C2761.108 2486.603 2963.123 2438.8959999999997 3127.193 2322.569 3287.383 2208.992 3379.035 2029.9160000000002 3460.025 1851.028 3540.785 1672.647 3631.864 1483.453 3594.078 1291.3220000000001 3556.866 1102.112 3386.264 979.1949999999999 3259.913 833.522 3133.631 687.928 3041.386 483.90200000000004 2854.145 438.235 2667.561 392.72800000000007 2489.624 524.703 2314.195 602.864 2160.913 671.157 2016.649 747.947 1896.371 864.962 1767.1889999999999 990.639 1628.292 1124.078 1596.158 1301.42 1563.6399999999999 1480.881 1659.022 1651.459 1722.908 1822.287 1791.671 2006.156 1829.935 2214.773 1983.475 2337.091 2142.138 2463.49 2357.16 2491.733 2560 2489.157' fill='%2376a7db'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1019'%3e%3crect width='2560' height='1440' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 0 50px;
+    text-align: center;
+}
+
+.text-box {
+    margin-top: 50px;
+    border: solid 3px black;
+    border-radius: 5px;
+    min-height: 120px;
+    max-height: 120px;
+    padding: 20px;
+    padding-top: 10px;
+    background: rgb(221, 221, 221);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.27);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.27);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.27);
+    overflow-y: hidden;
+    line-height: 50px;
+}
+
+.text-area {
+    font-size: 35px;
+}
+
+.highlight {
+    background: rgb(172, 167, 167);
+}
+
+.highlight-wrong {
+    background: rgb(172, 167, 167);
+    color: rgb(255, 47, 47);
+}
+
+.wrong {
+    color: rgb(255, 47, 47);
+}
+
+.correct {
+    color: rgb(1, 183, 1);
+}
+
+.bar {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+#input-text {
+    font-size: 30px;
+    padding: 20px;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.27);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.27);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.27);
+}
+
+#input-text:focus {
+    outline: none;
+}
+
+#time {
+    background: #3c4d5c;
+    font-size: 30px;
+    margin-left: 30px;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.27);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.27);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.27);
+}
+
+.title {
+    margin: 30px;
+}
+
+/* Input for resultat */
+
+p {
+    font-size: 2em;
+}
+
+.input-group {
+    margin-top: 1rem;
+}
+
+.input {
+    max-width: 300px;
+    height: 44px;
+    background-color: #ffffff97;
+    border-radius: .5rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    font-size: 1.5rem;
+    transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+}
+  
+.label {
+    display: block;
+    margin-bottom: .3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
+}
+  
+.input:hover, .input:focus, .input-group:hover .input {
+    outline: none;
+    border-color: #05060f;
+}
+  
+.input-group:hover .label, .input:focus {
+    color: #05060fc2;
+}
+
+.btn-box {
+    margin-top: 4em;
+}
+
+.btn {
+    font-size: 2em;
+    color: #05060f;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(6, 127, 198);
+    border-radius: 5px;
+    border: solid black 3px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+#pseudo {
+    text-decoration: underline;
+}
