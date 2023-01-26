@@ -42,7 +42,7 @@ $accuracy = $_REQUEST['accuracy'];
         </form>
 
         <div class="btn-box">
-            <a class="btn" href="index.html">Rejouer</a>
+            <a class="btn" href="game.html">Rejouer</a>
         </div>
 
     </div>
