@@ -1,0 +1,44 @@
+<!--
+Website by Tom Depussay 
+v1.0
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu - Typing Test</title>
+    <link rel="icon" href="favicon.ico" type="image/ico"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container" id="game">
+        <h1 class="title">Typing Test</h1>
+
+        <div id="container-game">
+            <form action="resultat.php" id="form" method="post">
+                <div class="text-box">
+                    <div class="text-area" id="text"></div>
+                </div>
+    
+                <div class="bar">
+                    <input type="text" id="input-text" autocomplete="off" onkeydown="return event.key != 'Enter';">
+                    <span id="time">60</span>
+                </div>
+    
+                <input type="hidden" name="score" id="score_input" value="">
+                <input type="hidden" name="accuracy" id="accuracy_input" value="">
+            </form>
+        </div>
+        
+
+        <a href="index.html" id="back" class="btn">Retour</a>
+
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
